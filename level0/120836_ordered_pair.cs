@@ -2,6 +2,7 @@
 
 
 //1. 시간 초과 실패
+/*
 using System;
 
 public class Solution {
@@ -22,9 +23,10 @@ public class Solution {
         
         return answer;
     }
-}
+}*/
 
 //2.
+/*
 using System;
 
 public class Solution {
@@ -47,7 +49,7 @@ public class Solution {
         
         return answer;
     }
-}
+}*/
 
 //3.
 using System;
