@@ -20,7 +20,7 @@ class Program
         }
         else
         {
-            alarmHour = hour > 1 ? hour - 1 : 23;
+            alarmHour = hour > 0 ? hour - 1 : 23;
             alarmMin = min + 15;
         }
 
