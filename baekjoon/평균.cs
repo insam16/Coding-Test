@@ -9,7 +9,7 @@ class Program
     {
         StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
 
-        double max = 0;
+        int max = 0;
         int subjects = int.Parse(Console.ReadLine());
         int[] scores = new int[subjects];
         double sum = 0;
@@ -18,12 +18,12 @@ class Program
         for (int i = 0; i < subjects; ++i)
         {
             scores[i] = int.Parse(input[i]);
-            if (scores[i] > max) max = (double)scores[i];
+            if (scores[i] > max) max = scores[i];
         }
 
         for (int i = 0; i < subjects; ++i)
         {
-            sum += scores[i] / max * 100;
+            sum += scores[i] / (double)max * 100;
         }
 
         sw.WriteLine(sum / subjects);
