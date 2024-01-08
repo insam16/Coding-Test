@@ -10,7 +10,7 @@ class Program
         StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
 
         string[] input;
-        int[,] sum = new int[9, 9];
+        int[,] table = new int[9, 9];
         int max = -1;
         int max_row = 0;
         int max_col = 0;
@@ -21,11 +21,11 @@ class Program
 
             for (int j = 0; j < 9; ++j)
             {
-                sum[i, j] = int.Parse(input[j]);
+                table[i, j] = int.Parse(input[j]);
 
-                if (sum[i, j] > max)
+                if (table[i, j] > max)
                 {
-                    max = sum[i, j];
+                    max = table[i, j];
                     max_row = i + 1;
                     max_col = j + 1;
                 }
