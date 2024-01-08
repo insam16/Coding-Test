@@ -11,7 +11,7 @@ class Program
 
         string[] input;
         int[,] sum = new int[9, 9];
-        int max = 0;
+        int max = -1;
         int max_row = 0;
         int max_col = 0;
 
