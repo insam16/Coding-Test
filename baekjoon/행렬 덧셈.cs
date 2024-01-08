@@ -15,23 +15,16 @@ class Program
 
         int[,] sum = new int[size_N, size_M];
 
-        for (int i = 0; i < size_N; i++)
+        for (int repeat = 0; repeat < 2; ++repeat)
         {
-            input = Console.ReadLine().Split();
-
-            for (int j = 0; j < size_M; j++)
+            for (int i = 0; i < size_N; i++)
             {
-                sum[i, j] = int.Parse(input[j]);
-            }
-        }
+                input = Console.ReadLine().Split();
 
-        for (int i = 0; i < size_N; i++)
-        {
-            input = Console.ReadLine().Split();
-
-            for (int j = 0; j < size_M; j++)
-            {
-                sum[i, j] += int.Parse(input[j]);
+                for (int j = 0; j < size_M; j++)
+                {
+                    sum[i, j] += int.Parse(input[j]);
+                }
             }
         }
 
